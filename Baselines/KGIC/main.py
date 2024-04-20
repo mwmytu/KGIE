@@ -46,7 +46,7 @@ parser = argparse.ArgumentParser()
 # parser.add_argument('--user_potential_triple_set_size', type=int, default=128)
 # parser.add_argument('--item_origin_triple_set_size', type=int, default=40)
 # parser.add_argument('--item_triple_set_size', type=int, default=128)
-# parser.add_argument('--agg', type=str, default='concat')
+# parser.add_argument('--agg', type=str, default='sum')
 
 # Music
 # parser.add_argument('-d', '--dataset', type=str, default='music')

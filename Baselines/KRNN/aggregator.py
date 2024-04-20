@@ -13,7 +13,14 @@ class Aggregator(torch.nn.Module):
             self.weights = torch.nn.Linear(dim, dim, bias=True)
         self.aggregator = aggregator
 
+    def Drop_node(self, tensor, dropout_prob):
+        dims = tensor.size()
+        mask = torch.rand(dims[0]) < dropout_prob
+        tensor[mask] = 0
+        return tensor
+
     def forward(self, self_vectors, neighbor_vectors, neighbor_relations, user_embeddings, act):
+        neighbor_vectors = self.Drop_node(neighbor_vectors, 0.2)
         batch_size = user_embeddings.size(0)
         if batch_size != self.batch_size:
             self.batch_size = batch_size
