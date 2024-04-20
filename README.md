@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # KGIE
 
 # 1.Title
@@ -51,3 +52,6 @@ doi = {https://doi.org/10.1016/j.knosys.2024.111813}
 }
 ```
 
+=======
+KGIE: Knowledge Graph Convolutional Network for RecommenderSystem with Interactive Embedding
+>>>>>>> a867308ee9e4314f12e889d0475ddc9b64ddd161
