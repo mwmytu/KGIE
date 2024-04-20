@@ -41,5 +41,13 @@ This code runs in a Python 3.9.16 environment.
 If you want to use our codes in your research, please cite:
 
 ```
+@article{LI2024111813,
+title = {KGIE: Knowledge graph convolutional network for recommender system with interactive embedding},
+journal = {Knowledge-Based Systems},
+pages = {111813},
+year = {2024},
+issn = {0950-7051},
+doi = {https://doi.org/10.1016/j.knosys.2024.111813}
+}
 ```
 
